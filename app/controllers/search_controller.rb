@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-
-  end 
+    @search_facade = SearchFacade.new(params['house'])
+    binding.pry
+  end
 end
