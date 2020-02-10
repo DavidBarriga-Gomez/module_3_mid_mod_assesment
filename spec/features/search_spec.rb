@@ -18,6 +18,5 @@ RSpec.describe 'I can search using the Potter API' do
        expect(page).to have_css('.role')
        expect(page).to have_css('.patronus')
      end
-
   end
 end
