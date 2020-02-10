@@ -13,8 +13,8 @@ class SearchController < ApplicationController
       faraday.adapter Faraday.default_adapter
     end
 
-    response = conn.get('')
+    response = conn.get("https://www.potterapi.com/v1/sortingHat.json")
+    # response = conn.get('/houses')
 
-    binding.pry
   end
 end
